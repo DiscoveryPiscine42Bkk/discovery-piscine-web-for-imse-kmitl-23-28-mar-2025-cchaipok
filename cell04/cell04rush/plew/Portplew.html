@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body {
+            background-color: #a3e9a4; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .navbar {
+            background: #FF8A65;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        .navbar a:hover {
+            background: #E64A19;
+            border-radius: 5px;
+        }
+
+       img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        .btn-back, .btn-next, .btn-middle {
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-back {
+            left: 20px;
+            background-color: rgba(255, 0, 0, 0.7);
+        }
+
+        .btn-next {
+            right: 20px;
+            background-color: rgba(0, 128, 0, 0.7);
+        }
+
+
+
+        .btn-back:hover {
+            background-color: rgba(255, 0, 0, 1);
+        }
+
+        .btn-next:hover {
+            background-color: rgba(0, 128, 0, 1);
+        }
+
+
+    </style>
+</head>
+<body>
+  <div class="navbar">
+         <a href="../home/port.html">Home</a>
+         <a href="../plew/plew.html">About plew</a>
+         <a href="../poopa/poopha.html">About poopa</a>
+         <a href="../plew/portplew.html">Certificate plew</a>
+          <a href="../poopa/poopa.html">Certificate poopa</a>
+   </div>
+    <h1>นี่คือผลงานของผมครับ</h1>
+    <p>Dante Certificate</p>
+
+    <img src="dante.png" alt="Dante Certificate">
+
+    
+    <button class="btn-back" onclick="window.location.href='plew.html'">Go to Plew Port</button>
+
+    
+    <a href="../home/port.html">
+        <button class="btn-next">Back to home Port</button>
+    </a>
+
+
+
+
+</body>
+</html>
